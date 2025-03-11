@@ -322,3 +322,28 @@ console.log("jai shree ram");
 // instanc1.finalValue();
 
 
+
+
+
+//inheritence in js
+
+
+// class atm {
+//     #balance = 0;
+//     get displayBalance() {
+//         console.log(this.#balance)
+//     }
+//     set updateBalance(updatedBalance) {
+//         this.#balance = updatedBalance;
+//     }
+// }
+
+// let user1 = new atm();
+// console.log("balance before update")
+// user1.displayBalance;
+
+// console.log("balance after update")
+// user1.updateBalance = 1200
+// user1.displayBalance;
+
+
