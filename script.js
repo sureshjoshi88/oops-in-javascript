@@ -347,3 +347,22 @@ console.log("jai shree ram");
 // user1.displayBalance;
 
 
+class parent{
+    constructor(name){
+        this.name = name;
+    }
+ 
+}
+
+class child extends parent {
+constructor(name,address){
+    super(name)
+    this.address = address;
+}
+dispalyName(){
+    console.log("Name =",this.name,"the address is =",this.address);
+    
+}
+}
+let child1 = new child("suresh","gangardi(merta city)")
+child1.dispalyName();
