@@ -347,22 +347,41 @@ console.log("jai shree ram");
 // user1.displayBalance;
 
 
-class parent{
-    constructor(name){
-        this.name = name;
-    }
+// class parent{
+//     constructor(name){
+//         this.name = name;
+//     }
  
-}
+// }
 
-class child extends parent {
-constructor(name,address){
-    super(name)
-    this.address = address;
-}
-dispalyName(){
-    console.log("Name =",this.name,"the address is =",this.address);
+// class child extends parent {
+// constructor(name,address){
+//     super(name)
+//     this.address = address;
+// }
+// dispalyName(){
+//     console.log("Name =",this.name,"the address is =",this.address);
     
+// }
+// }
+// let child1 = new child("suresh","gangardi(merta city)")
+// child1.dispalyName();
+
+
+class mainBank{
+    constructor(name,mobile,address){
+        this.name = name;
+        this.mobile = mobile;
+        this.address = address;
+    }
 }
+class user1 extends mainBank{
+    constructor(bankName){
+        this.bankName = bankName;
+        super(name,mobile,address)
+    }
+    printValue(){
+        console.log(`Name is a `);
+        
+    }
 }
-let child1 = new child("suresh","gangardi(merta city)")
-child1.dispalyName();
