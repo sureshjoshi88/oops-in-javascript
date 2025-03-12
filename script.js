@@ -391,8 +391,7 @@ class user2 extends mainBank{
         this.bankName = bankName;
     }
     printValue(){
-        console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);
-        
+        console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);   
     }
 }
 let instance = new user1("suresh","8824365208","gangardi","bank of baroda")
