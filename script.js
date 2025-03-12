@@ -378,8 +378,16 @@ class mainBank{
 class user1 extends mainBank{
     constructor(name,mobile,address,bankName){
         super(name,mobile,address)
-        // super(mobile)
-        // super(address)
+        this.bankName = bankName;
+    }
+    printValue(){
+        console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);
+        
+    }
+}
+class user2 extends mainBank{
+    constructor(name,mobile,address,bankName){
+        super(name,mobile,address)
         this.bankName = bankName;
     }
     printValue(){
@@ -389,3 +397,5 @@ class user1 extends mainBank{
 }
 let instance = new user1("suresh","8824365208","gangardi","bank of baroda")
 instance.printValue();
+let instance1 = new user2("ankit","98280813132","chomu","reserve bank of india")
+instance1.printValue();
