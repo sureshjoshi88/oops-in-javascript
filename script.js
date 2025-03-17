@@ -396,5 +396,7 @@ class user2 extends mainBank{
 }
 let instance = new user1("suresh","8824365208","gangardi","bank of baroda")
 instance.printValue();
-let instance1 = new user2("ankit","98280813132","chomu","reserve bank of india")
+let instance1 = new user2("ankit","9828013132","chomu","reserve bank of india")
 instance1.printValue();
+let instance2 = new user2("neeraj","8856789002","chomu","punjab national bank")
+instance2.printValue();
