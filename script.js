@@ -368,44 +368,71 @@ console.log("jai shree ram");
 // child1.dispalyName();
 
 
-class mainBank{
-    constructor(name,mobile,address){
-        this.name = name;
-        this.mobile = mobile;
-        this.address = address;
-    }
-}
-class user1 extends mainBank{
-    constructor(name,mobile,address,bankName){
-        super(name,mobile,address)
-        this.bankName = bankName;
-    }
-    printValue(){
-        console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);
+// class mainBank{
+//     constructor(name,mobile,address){
+//         this.name = name;
+//         this.mobile = mobile;
+//         this.address = address;
+//     }
+// }
+// class user1 extends mainBank{
+//     constructor(name,mobile,address,bankName){
+//         super(name,mobile,address)
+//         this.bankName = bankName;
+//     }
+//     printValue(){
+//         console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);
         
+//     }
+// }
+// class user2 extends mainBank{
+//     constructor(name,mobile,address,bankName){
+//         super(name,mobile,address)
+//         this.bankName = bankName;
+//     }
+//     printValue(){
+//         console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);   
+//     }
+// }
+// class user3 extends mainBank{
+//     constructor(name,mobile,address,bankName){
+//         super(name,mobile,address)
+//         this.bankName = bankName;
+//     }
+//     printValue(){
+//         console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);   
+//     }
+// }
+// let instance = new user1("suresh","8824365208","gangardi","bank of baroda")
+// instance.printValue();
+// let instance1 = new user2("ankit","9828013132","chomu","reserve bank of india")
+// instance1.printValue();
+// let instance2 = new user3("neeraj","8856789002","chomu","punjab national bank")
+// instance2.printValue();
+
+
+
+class parents{
+    constructor(value,value2){
+        this.value = value,
+        this.value2 = value2
+    }
+    printValeu(){
+       for(let i = 0;i<4;i++){
+            for(let j = 0;j<2;j++){
+                if(this.value[i]==this.value2[j]){
+                    console.log(this.value[i]);
+                    
+                }
+            }
+        }
     }
 }
-class user2 extends mainBank{
-    constructor(name,mobile,address,bankName){
-        super(name,mobile,address)
-        this.bankName = bankName;
-    }
-    printValue(){
-        console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);   
+class child extends parents {
+    constructor(value,value2){
+        super(value,value2)
     }
 }
-class user3 extends mainBank{
-    constructor(name,mobile,address,bankName){
-        super(name,mobile,address)
-        this.bankName = bankName;
-    }
-    printValue(){
-        console.log(` Name = ${this.name} \n mobile-number = ${this.mobile} \n address = ${this.address} \n bankname = ${this.bankName}`);   
-    }
-}
-let instance = new user1("suresh","8824365208","gangardi","bank of baroda")
-instance.printValue();
-let instance1 = new user2("ankit","9828013132","chomu","reserve bank of india")
-instance1.printValue();
-let instance2 = new user3("neeraj","8856789002","chomu","punjab national bank")
-instance2.printValue();
+
+const instance = new child([1,2,3,4],[1,3]);
+instance.printValeu();
