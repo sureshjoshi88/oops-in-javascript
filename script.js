@@ -438,19 +438,45 @@ console.log("jai shree ram");
 // instance.printValeu();
 
 
-class mainparent{
-    constructor(name){
-        this.name = name
-    }
-    printValue(){
-        console.log(this.name.length);
+// class mainparent{
+//     constructor(name){
+//         this.name = name
+//     }
+//     printValue(){
+//         console.log(this.name.length);
         
+//     }
+// }
+// class mainchild extends mainparent{
+//     constructor(name){
+//         super(name)
+//     }
+// }
+// let instance = new mainchild("sureshjoshi")
+// instance.printValue();
+
+
+class maincheck{
+    constructor(name,value){
+        this.name = name;
+        this.value  = value;
+    }
+
+    resultValue(){
+        if(this.name===this.value){
+            console.log("yes");
+            
+        }else{
+            console.log("not for same");
+            
+        }
     }
 }
-class mainchild extends mainparent{
-    constructor(name){
-        super(name)
+class childMain extends maincheck{
+    constructor(name,value){
+        super(name,value)
     }
 }
-let instance = new mainchild("sureshjoshi")
-instance.printValue();
+
+const instance1 = new childMain("ram","laxman")
+instance1.resultValue();
