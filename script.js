@@ -456,27 +456,65 @@ console.log("jai shree ram");
 // instance.printValue();
 
 
-class maincheck{
-    constructor(name,value){
-        this.name = name;
-        this.value  = value;
+// class maincheck{
+//     constructor(name,value){
+//         this.name = name;
+//         this.value  = value;
+//     }
+
+//     resultValue(){
+//         if(this.name===this.value){
+//             console.log("yes");
+            
+//         }else{
+//             console.log("not for same");
+            
+//         }
+//     }
+// }
+// class childMain extends maincheck{
+//     constructor(name,value){
+//         super(name,value)
+//     }
+// }
+
+// const instance1 = new childMain("ram","laxman")
+// instance1.resultValue();
+
+
+// class User{
+//     constructor(name){
+//         this._name = name
+//     }
+
+//     get getName(){
+//         console.log(this._name)
+//     }
+
+//     set setName(newName){
+//         this._name = newName
+//     }
+// }
+
+// const kedar = new User("kedar")
+// kedar.setName = "suresh joshi"
+// kedar.getName
+
+
+class mainclas{
+    constructor(name){
+        this._name = name;
+    }
+    get getName(){
+        console.log(this._name);
+        
+    }
+    set setName(newName){
+        this._name = newName
     }
 
-    resultValue(){
-        if(this.name===this.value){
-            console.log("yes");
-            
-        }else{
-            console.log("not for same");
-            
-        }
-    }
-}
-class childMain extends maincheck{
-    constructor(name,value){
-        super(name,value)
-    }
 }
 
-const instance1 = new childMain("ram","laxman")
-instance1.resultValue();
+const result = new mainclas("user")
+result.setName = "king"
+result.getName
