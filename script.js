@@ -412,27 +412,45 @@ console.log("jai shree ram");
 
 
 
-class parents{
-    constructor(value,value2){
-        this.value = value,
-        this.value2 = value2
-    }
-    printValeu(){
-       for(let i = 0;i<4;i++){
-            for(let j = 0;j<2;j++){
-                if(this.value[i]==this.value2[j]){
-                    console.log(this.value[i]);
+// class parents{
+//     constructor(value,value2){
+//         this.value = value,
+//         this.value2 = value2
+//     }
+//     printValeu(){
+//        for(let i = 0;i<4;i++){
+//             for(let j = 0;j<2;j++){
+//                 if(this.value[i]==this.value2[j]){
+//                     console.log(this.value[i]);
                     
-                }
-            }
-        }
-    }
-}
-class child extends parents {
-    constructor(value,value2){
-        super(value,value2)
-    }
-}
+//                 }
+//             }
+//         }
+//     }
+// }
+// class child extends parents {
+//     constructor(value,value2){
+//         super(value,value2)
+//     }
+// }
 
-const instance = new child([1,2,3,4],[1,3]);
-instance.printValeu();
+// const instance = new child([1,2,3,4],[1,3]);
+// instance.printValeu();
+
+
+class mainparent{
+    constructor(name){
+        this.name = name
+    }
+    printValue(){
+        console.log(this.name.length);
+        
+    }
+}
+class mainchild extends mainparent{
+    constructor(name){
+        super(name)
+    }
+}
+let instance = new mainchild("sureshjoshi")
+instance.printValue();
