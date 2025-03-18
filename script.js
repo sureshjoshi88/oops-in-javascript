@@ -501,20 +501,46 @@ console.log("jai shree ram");
 // kedar.getName
 
 
-class mainclas{
-    constructor(name){
-        this._name = name;
-    }
-    get getName(){
-        console.log(this._name);
+// class mainclas{
+//     constructor(name){
+//         this._name = name;
+//     }
+//     get getName(){
+//         console.log(this._name);
         
-    }
-    set setName(newName){
-        this._name = newName
-    }
+//     }
+//     set setName(newName){
+//         this._name = newName
+//     }
 
-}
+// }
 
-const result = new mainclas("user")
-result.setName = "king"
-result.getName
+// const result = new mainclas("user")
+// result.setName = "king"
+// result.getName
+
+// class User{
+//     constructor(name){
+//         this._name = name
+//     }
+
+//     static anonymous(){
+//         console.log("anonymous");
+//     }
+// }
+
+// const kedar = new User("kedar")
+// // kedar.anonymous() // error
+// User.anonymous() 
+
+// class anymain{
+//     constructor(value){
+//         this._value = value;
+//     }
+//     static voidman(){
+//         console.log("suucessfull");
+        
+//     }
+// }
+// const final = new anymain("12345");
+// anymain.voidman()
