@@ -205,8 +205,8 @@ console.log("jai shree ram");
 //         console.log(`name:-> ${this.name} , age :->${this.age}`);
 
 //     }
-// }
-// let instance1 = new crateobj("suresh",20)
+// }new
+// let instance1 =  crateobj("suresh",20)
 // instance1.printdetials()
 
 // let instance2 = new crateobj("ankit",17)
