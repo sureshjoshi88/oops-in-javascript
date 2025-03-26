@@ -544,3 +544,25 @@ console.log("jai shree ram");
 // }
 // const final = new anymain("12345");
 // anymain.voidman()
+
+// class parents{
+//     constructor(name,age,classes){
+//         this.name= name;
+//         this.age = age;
+//         this.classes  = classes;
+//     }
+//     printinformation(){
+//         console.log(this.name,this.age,this.classes);
+        
+//     }
+//     printValue(mark1,mark2,mark3,mark4,mark5,mark6){
+//         let total = mark1+mark2+mark3+mark4+mark5+mark6
+//         let final = total/6;
+//         console.log(final);
+        
+//     }
+// }
+
+// const instanc1 = new parents("suresh",20,"12th")
+// instanc1.printinformation()
+// instanc1.printValue(80,50,60,76,56,43)
