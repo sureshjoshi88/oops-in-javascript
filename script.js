@@ -566,3 +566,32 @@ console.log("jai shree ram");
 // const instanc1 = new parents("suresh",20,"12th")
 // instanc1.printinformation()
 // instanc1.printValue(80,50,60,76,56,43)
+
+
+class main{
+    constructor(name,clas){
+        this.name = name;
+        this.clas = clas;
+    }
+
+}
+class child extends main{
+    constructor(name,clas,marks1,marks2,marks3,marks4,marks5,marks6){
+        super(name,clas);
+        this.marks1 = marks1
+        this.marks2 = marks2
+        this.marks3 = marks3
+        this.marks4 = marks4
+        this.marks5 = marks5
+        this.marks6 = marks6
+    }
+    printValeu(){
+        console.log(`the name is ${this.name} \n the class is ${this.clas}`)
+        let total = this.marks1+this.marks2+this.marks3+this.marks4+this.marks5+this.marks6;
+        console.log(`the average is a ${total/6}`);
+        
+    }
+}
+
+let instane = new child("suresh",12,80,90,70,60,98,87);
+instane.printValeu();
